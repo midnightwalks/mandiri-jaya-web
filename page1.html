@@ -146,58 +146,50 @@
   </nav>
 
 
-  <section id="home" class="hero-section relative h-screen bg-cover bg-center"
-    style="background-image: url('galeri7.jpg');">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
+<section id="home" class="hero-section relative bg-cover bg-center py-40 px-4 sm:px-6 text-center" style="background-image: url('galeri7.jpg');">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
 
-    <!-- Konten -->
-    <div class="relative z-10 flex flex-col justify-center items-center h-full px-6 pt-28 text-center">
+  <!-- Konten -->
+  <div class="relative z-10 mx-auto max-w-xl bg-white bg-opacity-70 backdrop-blur-md shadow-lg rounded-2xl px-6 py-10 sm:px-10 md:px-12 text-gray-800 animate-fade-in-down animation-delay-200">
 
-      <!-- Kotak transparan -->
-      <div
-        class="bg-white bg-opacity-60 backdrop-blur-md shadow-lg rounded-xl p-8 md:p-12 max-w-4xl w-full text-gray-800 -mt-10 animate-fade-in-down animation-delay-200">
+    <!-- Judul -->
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-amber-800 mb-4">
+      Bata Ringan <span class="text-amber-600">Mandiri Jaya</span>
+    </h1>
 
+    <!-- Deskripsi -->
+    <p class="text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+      Bata Ringan adalah material bangunan modern berbentuk blok dari campuran pasir silika, semen, kapur, air, dan
+      bahan pengembang. Diproses dengan teknologi tinggi, bata ringan lebih presisi, ringan, tahan api, dan
+      memberikan insulasi termal-akustik unggul—solusi ideal untuk pembangunan cepat, kuat, dan ramah lingkungan.
+    </p>
 
-        <!-- Judul -->
-        <h1 class="text-4xl md:text-6xl font-bold text-amber-800 mb-6">
-          Bata Ringan <span class="text-amber-600 ">Mandiri Jaya</span>
-        </h1>
-
-        <!-- Deskripsi -->
-        <p class="text-base md:text-lg leading-relaxed mb-8">
-          Bata Ringan adalah material bangunan modern berbentuk blok dari campuran pasir silika, semen, kapur, air, dan
-          bahan pengembang. Diproses dengan teknologi tinggi, bata ringan lebih presisi, ringan, tahan api, dan
-          memberikan insulasi termal-akustik unggul—solusi ideal untuk pembangunan cepat, kuat, dan ramah lingkungan.
-        </p>
-
-        <!-- Tombol -->
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#produk"
-            class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold shadow-md tracking-wide transition-all transform hover:scale-105">
-            Lihat Produk
-          </a>
-          <a href="#spesifikasi"
-            class="bg-amber-500 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold shadow-md tracking-wide transition-all transform hover:scale-105">
-            Lihat Spesifikasi
-          </a>
-          <a href="#kontak"
-            class="bg-white hover:bg-gray-100 text-amber-700 px-8 py-3 rounded-full font-semibold shadow-md tracking-wide transition-all transform hover:scale-105">
-            Hubungi Kami
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Link bawah -->
-      <a href="index.html"
-        class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white underline text-sm hover:text-amber-300 z-20">
-        ← Kembali ke Halaman Utama
+    <!-- Tombol -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#produk"
+        class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold shadow-md tracking-wide transition-all transform hover:scale-105">
+        Lihat Produk
       </a>
-
-
+      <a href="#spesifikasi"
+        class="bg-amber-500 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold shadow-md tracking-wide transition-all transform hover:scale-105">
+        Lihat Spesifikasi
+      </a>
+      <a href="#kontak"
+        class="bg-white hover:bg-gray-100 text-amber-700 px-8 py-3 rounded-full font-semibold shadow-md tracking-wide transition-all transform hover:scale-105">
+        Hubungi Kami
+      </a>
     </div>
-  </section>
+
+    <!-- Link bawah -->
+    <a href="index.html"
+      class="mt-6 block text-white underline text-sm hover:text-amber-300">
+      ← Kembali ke Halaman Utama
+    </a>
+
+  </div>
+</section>
+
 
 <!-- Brand Logos --> 
 <section class="py-12 bg-gray-100">
@@ -676,13 +668,6 @@
         const img = card.querySelector('img');
         img.style.transform = 'scale(1)';
       });
-    });
-
-    // Mobile menu toggle
-    const mobileMenuButton = document.querySelector('.md\\:hidden');
-    mobileMenuButton.addEventListener('click', () => {
-      const navLinks = mobileMenuButton.closest('nav').querySelector('.hidden.md\\:flex');
-      navLinks.classList.toggle('hidden');
     });
   </script>
 
