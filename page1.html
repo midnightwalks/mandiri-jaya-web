@@ -190,7 +190,7 @@
       </div>
 
       <!-- Link bawah -->
-      <a href="main.html"
+      <a href="index.html"
         class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white underline text-sm hover:text-amber-300 z-20">
         ← Kembali ke Halaman Utama
       </a>
@@ -763,7 +763,7 @@
       <!-- Dropdown Links -->
       <div id="menuDropdown" class="absolute bottom-16 left-0 w-44 flex flex-col items-center space-y-2 bg-opacity-0 
              opacity-0 pointer-events-none transition-all duration-300">
-        <a href="main.html" id="link-home"
+        <a href="index.html" id="link-home"
           class="block bg-white hover:bg-gray-100 text-gray-800 text-sm font-medium px-4 py-2 rounded-lg shadow-md w-full text-center">
           Home Page
         </a>
@@ -816,7 +816,7 @@
 
     const currentPath = window.location.pathname;
 
-    if (currentPath.includes("main.html")) {
+    if (currentPath.includes("index.html")) {
       document.getElementById("link-home").classList.add("text-gray-400", "cursor-not-allowed", "pointer-events-none");
     }
     if (currentPath.includes("page1.html")) {
