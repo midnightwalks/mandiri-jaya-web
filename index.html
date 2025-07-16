@@ -643,9 +643,9 @@
 
     const currentPath = window.location.pathname;
 
-    if (currentPath.includes("index.html")) {
-      document.getElementById("link-home").classList.add("text-orange-400", "cursor-not-allowed", "pointer-events-none");
-    }
+    if (currentPath === '/' || currentPath.includes("index.html")) {
+  document.getElementById("link-home").classList.add("text-orange-400", "cursor-not-allowed", "pointer-events-none");
+}
     if (currentPath.includes("page1.html")) {
       document.getElementById("link-bata").classList.add("text-gray-400", "cursor-not-allowed", "pointer-events-none");
     }
